@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script rel="stylesheet" href = '/templates/common.css'></script>
+  <style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Auto Model Generator</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Upload Data</a></li>
+      <li class="active"><a href="/viewData">View Data</a></li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Models</a>
+          <ul class="dropdown-menu dropdown-submenu">
+            <li><a class="dropdown-item" href="/model/LinearRegression">Linear Regression</a></li>
+            <li><a class="dropdown-item" href="/model/RandomForestRegression">Random Forest Regression</a></li>
+            <li><a class="dropdown-item" href="/model/DecisionTreeRegression">Decision Tree Regression</a></li>
+            <li><a class="dropdown-item" href="/model/GradientBoostRegression">GradientBoosting Regression</a></li>
+            <li><a class="dropdown-item" href="/model/AdaBoostRegression">AdaBoost Regression</a></li>
+            <li><a class="dropdown-item" href="/model/XGBoostRegression">XGBoost Regression</a></li>
+            <li><a class="dropdown-item" href="/model/CatBoostRegression">CatBoost Regression</a></li>
+          </ul>
+      </li>     
+      <li class="nav-item dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Metrics</a>
+          <ul class="dropdown-menu dropdown-submenu">
+            <li><a class="dropdown-item" href="/metric/LinearRegression">Linear Regression</a></li>
+            <li><a class="dropdown-item" href="/metric/RandomForestRegression">Random Forest Regression</a></li>
+            <li><a class="dropdown-item" href="/metric/DecisionTreeRegression">Decision Tree Regression</a></li>
+            <li><a class="dropdown-item" href="/metric/GradientBoostRegression">GradientBoosting Regression</a></li>
+            <li><a class="dropdown-item" href="/metric/AdaBoostRegression">AdaBoost Regression</a></li>
+            <li><a class="dropdown-item" href="/metric/XGBoostRegression">XGBoost Regression</a></li>
+            <li><a class="dropdown-item" href="/metric/CatBoostRegression">CatBoost Regression</a></li>
+          </ul>
+      </li>
+      <li><a href="/predictdata">Prediction</a></li>
+    </ul>
+  </div>
+</nav>
+
+</body>
+</html>
